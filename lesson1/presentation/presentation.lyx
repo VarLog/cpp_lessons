@@ -23,12 +23,14 @@
     \includegraphics[height=1cm,width=2cm]{iate_logo.jpg}
     \end{textblock*}
 }
+
+\definecolor{greyblue}{RGB}{153, 179, 255}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language russian
-\language_package default
-\inputencoding auto
+\language_package babel
+\inputencoding utf8
 \fontencoding global
 \font_roman default
 \font_sans default
@@ -116,6 +118,27 @@
 О себе
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamercolor{background canvas}{bg=greyblue}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
 
 \size large
@@ -163,6 +186,20 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
 
 \size large
@@ -180,31 +217,11 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-На словах я Лев Толстой
+Закончил ИАТЭ в 2015г, специалист АСУ
 \end_layout
 
 \begin_layout Itemize
-
-\size small
-Максим Федоренко
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-m.fedorenko@corp.mail.ru
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-skype: asd
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-telegram: asd
+Ведущий программист кафедры ПМ
 \end_layout
 
 \end_deeper
@@ -229,7 +246,199 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
+Пишу на 
+\family typewriter
+C++
+\family default
+ с 2010 года
+\end_layout
+
+\begin_layout Itemize
+Руководитель команды разработки в 
+\series bold
 Latista
+\end_layout
+
+\begin_layout Itemize
+Разработчик в 
+\series bold
+Mail.Ru Group
+\series default
+.
+ Департамент игр
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+
+\size large
+Цель курса
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamercolor{background canvas}{bg=greyblue}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Цели курса
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Цели курса
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Проблема: выпускник ИАТЭ, попадая в IT компанию, оказывается не знаком с
+ современными принципами, средствами и технологиями разработки ПО
+\end_layout
+
+\begin_layout Itemize
+Передача опыта
+\end_layout
+
+\begin_layout Itemize
+Популяризация 
+\family typewriter
+C++
+\end_layout
+
+\begin_layout Itemize
+Повышение общей культуры программирования
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+План занятий
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+4 занятия
+\end_layout
+
+\begin_layout Enumerate
+Обзор языка 
+\family typewriter
+C++
+\end_layout
+
+\begin_layout Enumerate
+Средства и технологии разработки ПО
+\end_layout
+
+\begin_layout Enumerate
+Совместная работа над проектом
+\end_layout
+
+\begin_layout Enumerate
+Современный эффективный 
+\family typewriter
+C++
 \end_layout
 
 \end_deeper
@@ -241,6 +450,27 @@ Latista
 
 \size large
 Язык C++
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamercolor{background canvas}{bg=greyblue}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Frame
@@ -291,6 +521,20 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
 
 \size large
@@ -308,7 +552,27 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-вфывфыв
+Страуструп, 1983 год
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Си с классами
+\end_layout
+
+\begin_layout Itemize
+Стандартизация языка в 1998 и 2003 годах
+\end_layout
+
+\begin_layout Itemize
+Современные стандарты 
+\family typewriter
+C++11
+\family default
+ и 
+\family typewriter
+C++14
 \end_layout
 
 \end_deeper
@@ -323,7 +587,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Парадигма
+Характеристики
 \end_layout
 
 \end_inset
@@ -333,7 +597,15 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-фывфыв
+Универсальный язык общего назначения
+\end_layout
+
+\begin_layout Itemize
+Компилируемый
+\end_layout
+
+\begin_layout Itemize
+Статическая типизация
 \end_layout
 
 \end_deeper
@@ -348,9 +620,975 @@ status open
 status open
 
 \begin_layout Plain Layout
+Философия 
+\family typewriter
+C++
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Переносимость на уровне языка Си
+\end_layout
+
+\begin_layout Itemize
+Поддержка множества стилей программирования
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+процедурное
+\end_layout
+
+\begin_layout Itemize
+ООП
+\end_layout
+
+\begin_layout Itemize
+обобщённое
+\end_layout
+
+\begin_layout Itemize
+функциональное
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Философия 
+\family typewriter
+C++
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Свобода выбора у программиста
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Ты не платишь за то, что не используешь
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Следствия
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Богатая семантика
+\end_layout
+
+\begin_layout Itemize
+Высокий порог вхождения
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Пример кода
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Область применения
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Системное программирование
+\end_layout
+
+\begin_layout Itemize
+Высокопроизводительное серверное ПО
+\end_layout
+
+\begin_layout Itemize
+Кроссплатформенное ПО
+\end_layout
+
+\begin_layout Itemize
+Мобильные устройства
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Игры
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+
+\size large
+Практикум
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamercolor{background canvas}{bg=greyblue}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Практикум
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Тестовый проект
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Проект лежит на 
+\series bold
+GitHub
+\series default
+: 
+\emph on
+URL
+\end_layout
+
+\begin_layout Itemize
+Сборка осуществляется с помощью 
+\series bold
+CMake
+\end_layout
+
+\begin_layout Itemize
+Среда разработки: 
+\series bold
+QtCreator
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+
+\size large
+ООП
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamercolor{background canvas}{bg=greyblue}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Объектно-ориентированое программирование
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Концепция
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Модель предметной области представляется в виде множества типизированных
+ объектов
+\end_layout
+
+\begin_layout Itemize
+Объект абстрагирует данные, скрывая их внутри собственной реализации
+\end_layout
+
+\begin_layout Itemize
+Объекты обмениваются 
+\series bold
+сообщениями
+\end_layout
+
+\begin_layout Itemize
+Типы объектов образовывают иерархию наследования
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Полиморфизм
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Работа с объектами различных типов единым образом 
+\end_layout
+
+\begin_layout Itemize
+Статический (параметрический)
+\end_layout
+
+\begin_layout Itemize
+Динамический
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Реализация ООП в 
+\family typewriter
+C++
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Пользовательские типы
+\end_layout
+
+\begin_layout Itemize
+Уровни доступа
+\end_layout
+
+\begin_layout Itemize
+Наследование
+\end_layout
+
+\begin_layout Itemize
+Виртуальные функции
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Недостатки ООП
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Злоупотребление наследованием
+\end_layout
+
+\begin_layout Itemize
+Иерархия не обладает гибкостью
+\end_layout
+
+\begin_layout Itemize
+Динамическая диспетчеризация типов снижает производительность
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+
+\size large
+Комбинирование стилей
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamercolor{background canvas}{bg=greyblue}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Комбинирование стилей при разработке на 
+\family typewriter
+C++
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Обобщённое программирование
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Статический полиморфизм
+\end_layout
+
+\begin_layout Itemize
+Отделение алгоритмов от деталей реализации
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Функциональное программирование
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Замыкания (
+\begin_inset Formula $\lambda$
+\end_inset
+
+ -- функции)
+\end_layout
+
+\begin_layout Itemize
+...
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+
+\size large
+Мифы
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamercolor{background canvas}{bg=greyblue}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Мифы о 
+\family typewriter
+C++
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+С++
+\family default
+ vs Си
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+
+\series bold
+Миф: Чтобы понять 
+\family typewriter
+С++
+\family default
+, сначала нужно выучить Си
+\end_layout
+
+\begin_layout Itemize
+Си -- лишь одно из подмножеств 
+\family typewriter
+С++
+\family default
+, далеко не лучшее
+\end_layout
+
+\begin_layout Itemize
+В Си нет типобезопасности
+\end_layout
+
+\begin_layout Itemize
+На Си сложно решать простые задачи
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ручное управление памятью 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Миф: 
+\series bold
+В 
+\family typewriter
+C++
+\family default
+ необходимо вручную управлять памятью и указателями.
+ Языки со сборщиком мусора намного удобней и эффективней
+\end_layout
+
+\begin_layout Itemize
+Сборка мусора -- не понацея
+\end_layout
+
+\begin_layout Itemize
+Концепция 
+\series bold
+RAII
+\series default
+ справляется с управлением ресурсами
+\end_layout
+
+\begin_layout Itemize
+Ручное управление памятью с помощью 
+\family typewriter
+new
+\family default
+/
+\family typewriter
+delete
+\family default
+ в 
+\family typewriter
+С++
+\family default
+ -- моветон
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+
+\size large
 Заключение
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamercolor{background canvas}{bg=greyblue}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Заключение
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Литература
+\end_layout
+
 \end_inset
 
 
@@ -358,7 +1596,39 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-яявфыывф
+Страуструп 
+\series bold
+\emph on
+Язык программирования С++
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Контакты
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+email: varlllog@gmail.com
+\end_layout
+
+\begin_layout Description
+skype: varlogg
 \end_layout
 
 \end_deeper
