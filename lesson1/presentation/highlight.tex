@@ -1,0 +1,60 @@
+%------------------
+% beamer syntaxhighlight version 1.0
+% October 26, 2013
+%
+% Felix Hoffmann
+% about.me/felixhoffmann
+%------------------
+
+\documentclass{beamer}
+\usetheme{default}
+
+\usepackage{minted}
+
+\newminted{python}{fontsize=\scriptsize, 
+		   linenos,
+		   numbersep=8pt,
+		   gobble=4,
+		   frame=lines,
+		   bgcolor=bg,
+		   framesep=3mm} 
+               		
+
+\begin{document}
+
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+\defverbatim[colored]\exampleCode{
+\begin{pythoncode}
+               	
+               	
+    import numpy as np
+    import pylab as pl
+
+    def f_x(x):
+      return np.exp(x)+x**2-5*x
+
+    def approx_f(x):
+      return 1 -4*x +3./2*x**2
+
+    xvals = np.arange(-4,4,0.1)
+    fx_vals = [f_x(x) for x in xvals]
+    approx_vals = [approx_f(x) for x in xvals]
+
+    pl.plot(xvals,fx_vals)
+    pl.plot(xvals,approx_vals)
+
+    pl.show()
+    
+    
+\end{pythoncode}
+}
+
+\begin{frame}
+\frametitle{Code example}
+\exampleCode
+\pause
+Overlays work!
+\end{frame}
+
+\end{document}
