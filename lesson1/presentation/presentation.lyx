@@ -552,7 +552,7 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-Страуструп, 1983 год
+Бьёрн Страуструп, 1983 год
 \end_layout
 
 \begin_layout Itemize
@@ -606,6 +606,51 @@ status open
 
 \begin_layout Itemize
 Статическая типизация
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Пример
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout ExampleBlock
+
+\family typewriter
+int i;
+\end_layout
+
+\begin_layout ExampleBlock
+
+\family typewriter
+i = 5;
+\end_layout
+
+\begin_layout ExampleBlock
+
+\family typewriter
+i = 3.14; // Предупреждение!
+\end_layout
+
+\begin_layout ExampleBlock
+
+\family typewriter
+i = 
+\begin_inset Quotes fld
+\end_inset
+
+hello
+\begin_inset Quotes frd
+\end_inset
+
+; // Ошибка!
 \end_layout
 
 \end_deeper
@@ -723,7 +768,7 @@ status open
 
 \series bold
 \emph on
-Пример кода
+Пример кода CRTP
 \end_layout
 
 \end_deeper
@@ -1282,7 +1327,7 @@ status open
 \end_layout
 
 \begin_layout Itemize
-...
+Неизменяемые типы данных
 \end_layout
 
 \end_deeper
@@ -1586,7 +1631,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Литература
+Заключение
 \end_layout
 
 \end_inset
@@ -1595,6 +1640,10 @@ status open
 \end_layout
 
 \begin_deeper
+\begin_layout Description
+Литература
+\end_layout
+
 \begin_layout Itemize
 Страуструп 
 \series bold
@@ -1602,27 +1651,17 @@ status open
 Язык программирования С++
 \end_layout
 
-\end_deeper
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Контакты
-\end_layout
-
+\begin_layout Standard
+\begin_inset VSpace vfill
 \end_inset
 
 
 \end_layout
 
-\begin_deeper
+\begin_layout Description
+Контакты
+\end_layout
+
 \begin_layout Description
 email: varlllog@gmail.com
 \end_layout

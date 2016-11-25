@@ -1,4 +1,5 @@
 add_subdirectory("hello_world")
+#add_subdirectory("basic_syntax")
 #add_subdirectory("oop")
 #add_subdirectory("dynamic_polymorph")
 #add_subdirectory("static_polymorph")
