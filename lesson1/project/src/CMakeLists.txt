@@ -1,0 +1,7 @@
+add_subdirectory("hello_world")
+#add_subdirectory("oop")
+#add_subdirectory("dynamic_polymorph")
+#add_subdirectory("static_polymorph")
+#add_subdirectory("generic_programming")
+#add_subdirectory("mypth1")
+#add_subdirectory("mypth2")

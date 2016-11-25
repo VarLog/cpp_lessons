@@ -1,0 +1,16 @@
+---
+Language:      Cpp
+BasedOnStyle:  Google
+ColumnLimit:   93
+IndentWidth:   4
+IncludeCategories:
+  - Regex:           '^<.*\.h>'
+    Priority:        1
+  - Regex:           '^<cstd.*>'
+    Priority:        2
+  - Regex:           '^<.*'
+    Priority:        3
+  - Regex:           '.*'
+    Priority:        4
+...
+
