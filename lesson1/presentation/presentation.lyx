@@ -6,6 +6,8 @@
 \begin_preamble
 \usepackage{textpos}
 
+\usepackage{listings}
+
 \usetheme{default}
 
 %gets rid of bottom navigation bars
@@ -25,9 +27,37 @@
 }
 
 \definecolor{greyblue}{RGB}{153, 179, 255}
+
+\lstset{language=C++,
+                basicstyle=\footnotesize\ttfamily,
+                keywordstyle=\footnotesize\color{blue}\ttfamily,
+                moredelim=**[is][\btHL]{`}{`},
+}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
+\begin_local_layout
+Format 49
+Style CppCode
+Category              MainText
+Margin                Static
+LatexType             Environment
+LatexName             lstlisting
+NextNoIndent          1
+LeftMargin            MMM
+RightMargin           MMM
+PassThru              1
+ParbreakIsNewline             1
+ParIndent             MM
+ParSkip               0
+ItemSep               0
+TopSep                0.5
+BottomSep             0.5
+ParSep                0
+Align                 Block
+AlignPossible         Block, Left, Right, Center
+End
+\end_local_layout
 \language russian
 \language_package babel
 \inputencoding utf8
@@ -575,7 +605,30 @@ C++11
 C++14
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename cpp_logo.png
+	lyxscale 10
+	height 2cm
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
+\begin_layout Frame
+
+\end_layout
+
 \begin_layout Separator
 
 \end_layout
@@ -621,25 +674,26 @@ status open
 
 \end_layout
 
-\begin_layout ExampleBlock
+\begin_deeper
+\begin_layout CppCode
 
 \family typewriter
 int i;
 \end_layout
 
-\begin_layout ExampleBlock
+\begin_layout CppCode
 
 \family typewriter
 i = 5;
 \end_layout
 
-\begin_layout ExampleBlock
+\begin_layout CppCode
 
 \family typewriter
-i = 3.14; // Предупреждение!
+i = 3.14;    // Предупреждение!
 \end_layout
 
-\begin_layout ExampleBlock
+\begin_layout CppCode
 
 \family typewriter
 i = 
@@ -653,6 +707,7 @@ hello
 ; // Ошибка!
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Separator
 
@@ -740,7 +795,7 @@ C++
 
 \end_layout
 
-\begin_layout Frame
+\begin_layout FragileFrame
 
 \size large
 \begin_inset Argument 4
@@ -769,6 +824,10 @@ status open
 \series bold
 \emph on
 Пример кода CRTP
+\end_layout
+
+\begin_layout CppCode
+int i = 0;
 \end_layout
 
 \end_deeper
