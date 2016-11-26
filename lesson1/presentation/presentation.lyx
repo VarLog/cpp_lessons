@@ -1645,10 +1645,26 @@ status open
 \end_layout
 
 \begin_layout Itemize
-Страуструп 
+Стивен Прата 
 \series bold
 \emph on
-Язык программирования С++
+Язык программирования C++.
+ Лекции и упражнения
+\end_layout
+
+\begin_layout Itemize
+Роберт Лафоре 
+\series bold
+\emph on
+Объектно-ориентированное программирование в C++
+\end_layout
+
+\begin_layout Itemize
+Бьёрн Страуструп 
+\series bold
+\emph on
+Программирование.
+ Принципы и практика с использованием C++
 \end_layout
 
 \begin_layout Standard
