@@ -633,7 +633,7 @@ C++14
 
 \end_layout
 
-\begin_layout Frame
+\begin_layout FragileFrame
 
 \size large
 \begin_inset Argument 4
@@ -677,34 +677,22 @@ status open
 \begin_deeper
 \begin_layout CppCode
 
-\family typewriter
 int i;
 \end_layout
 
 \begin_layout CppCode
 
-\family typewriter
 i = 5;
 \end_layout
 
 \begin_layout CppCode
 
-\family typewriter
-i = 3.14;    // Предупреждение!
+i = 3.14 // Warning!
 \end_layout
 
 \begin_layout CppCode
 
-\family typewriter
-i = 
-\begin_inset Quotes fld
-\end_inset
-
-hello
-\begin_inset Quotes frd
-\end_inset
-
-; // Ошибка!
+i = "hello" // Error!
 \end_layout
 
 \end_deeper
@@ -819,17 +807,62 @@ status open
 Высокий порог вхождения
 \end_layout
 
-\begin_layout Itemize
+\begin_layout ExampleBlock
+\begin_inset Argument 2
+status open
 
-\series bold
-\emph on
-Пример кода CRTP
+\begin_layout Plain Layout
+Пример
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout CppCode
+
+auto timer = [](auto&& func, auto&&...
+ params) {
 \end_layout
 
 \begin_layout CppCode
-int i = 0;
+
+	// start timer
 \end_layout
 
+\begin_layout CppCode
+
+	std::forward<decltype(func)>(func) (
+\end_layout
+
+\begin_layout CppCode
+
+		std::forward<decltype(params)>
+\end_layout
+
+\begin_layout CppCode
+
+			(params)...
+\end_layout
+
+\begin_layout CppCode
+
+	);
+\end_layout
+
+\begin_layout CppCode
+
+	// stop timer
+\end_layout
+
+\begin_layout CppCode
+
+};
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Separator
 
@@ -988,8 +1021,8 @@ status open
 GitHub
 \series default
 : 
-\emph on
-URL
+\family typewriter
+https://github.com/VarLog/cpp_lessons
 \end_layout
 
 \begin_layout Itemize
@@ -1065,7 +1098,7 @@ status open
 \align center
 
 \size giant
-Объектно-ориентированое программирование
+Объектно-ориентированное программирование
 \end_layout
 
 \begin_layout Standard
@@ -1563,7 +1596,7 @@ C++
 \end_layout
 
 \begin_layout Itemize
-Сборка мусора -- не понацея
+Сборка мусора -- не панацея
 \end_layout
 
 \begin_layout Itemize
