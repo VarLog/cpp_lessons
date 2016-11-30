@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass beamer
 \begin_preamble
 \usepackage{textpos}
@@ -62,16 +64,16 @@ End
 \language_package babel
 \inputencoding utf8
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -182,6 +184,12 @@ status open
 \end_inset
 
 
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -212,7 +220,10 @@ status open
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -237,9 +248,15 @@ status open
 status open
 
 \begin_layout Plain Layout
-VCS
+Проблема
 \end_layout
 
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -247,11 +264,571 @@ VCS
 
 \begin_deeper
 \begin_layout Itemize
-git
+Проект – множество файлов с исходным кодом
+\end_layout
+
+\begin_layout Itemize
+Код изменяется
+\end_layout
+
+\begin_layout Itemize
+За изменениями нужно следить
+\end_layout
+
+\begin_layout Itemize
+Необходимо поддерживать несколько 
+\series bold
+\emph on
+версий
+\series default
+\emph default
+ проекта
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Наивное решение
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Хранить копии файлов
+\end_layout
+
+\begin_layout Itemize
+Копии файлов пронумерованы
+\end_layout
+
+\begin_layout Description
+Недостатки:
+\end_layout
+
+\begin_layout Itemize
+Приходится хранить несколько практически идентичных копий
+\end_layout
+
+\begin_layout Itemize
+Требуется повышенное внимание и дисциплина
+\end_layout
+
+\begin_layout Itemize
+Возникают ошибки
+\end_layout
+
+\begin_layout Itemize
+Это неудобно
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Централизованные системы 
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Хранилище (репозиторий) находится на 
+\series bold
+сервере
+\end_layout
+
+\begin_layout Itemize
+Сервер совершает операции над репозиторием
+\end_layout
+
+\begin_layout Itemize
+Пользователь работает с 
+\series bold
+\emph on
+рабочей копией
+\end_layout
+
+\begin_layout Itemize
+Изменения отправляются на сервер, формируется новая 
+\series bold
+\emph on
+ревизия
+\end_layout
+
+\begin_layout Description
+Примеры:
+\end_layout
+
+\begin_layout Itemize
+CVS
+\end_layout
+
+\begin_layout Itemize
+Subversion (SVN)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Недостатки
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Клиент-серверная архитектура не обладает гибкостью
+\end_layout
+
+\begin_layout Itemize
+Слабая поддержка ветвления
+\end_layout
+
+\begin_layout Itemize
+Линейный подход к разработке
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Распределённые системы
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Каждая рабочая копия – полноценный репозиторий
+\end_layout
+
+\begin_layout Itemize
+Для работы не нужен сервер
+\end_layout
+
+\begin_layout Itemize
+Хранилища синхронизируются между собой
+\end_layout
+
+\begin_layout Description
+Примеры:
+\end_layout
+
+\begin_layout Itemize
+Git
+\end_layout
+
+\begin_layout Itemize
+Mercurial
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Git
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Линус Торвальдс
+\end_layout
+
+\begin_layout Itemize
+Ядро Linux
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename git_logo.png
+	lyxscale 10
+	height 2cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Принципы работы
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Рабочая копия
+\end_layout
+
+\begin_layout Itemize
+Добавление изменений в индекс
+\end_layout
+
+\begin_layout Itemize
+Фиксация изменений
+\end_layout
+
+\begin_layout Itemize
+Синхронизация между репозиториями
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Удалённые репозитории
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Командная работа над проектом
+\end_layout
+
+\begin_layout Itemize
+Работа на разных устройствах
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Голые
+\series default
+\emph default
+ репозитории
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+GitHub
+\series default
+ – хостинг удалённых репозиториев
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename github_logo.png
+	lyxscale 10
+	height 2cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ветки
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Одна из главных достоинств Git
+\end_layout
+
+\begin_layout Itemize
+Ветка – множество 
+\series bold
+\emph on
+коммитов
+\end_layout
+
+\begin_layout Itemize
+Главная ветка – 
+\series bold
+master
+\end_layout
+
+\begin_layout Itemize
+Слияние веток
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Инструменты для работы с Git
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Командная строка
+\end_layout
+
+\begin_layout Itemize
+SourceTree
+\end_layout
+
+\begin_layout Itemize
+GitKraken
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Git Flow
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Стандартные подходы
+\end_layout
+
+\begin_layout Itemize
+Несколько ключевых веток: 
+\series bold
+master
+\series default
+ и 
+\series bold
+develop
+\end_layout
+
+\begin_layout Itemize
+...
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -295,6 +872,12 @@ status open
 \end_inset
 
 
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -325,7 +908,10 @@ status open
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -353,6 +939,12 @@ status open
 Системы сборки
 \end_layout
 
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -364,124 +956,10 @@ CMake
 \end_layout
 
 \end_deeper
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Section
-
-\size large
-TODO
-\end_layout
-
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-setbeamercolor{background canvas}{bg=greyblue}
-\end_layout
-
+\begin_inset Separator parbreak
 \end_inset
 
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-
-\size large
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size giant
-TODO
-\end_layout
-
-\begin_layout Standard
-\align right
-
-\size large
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Separator
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-TODO
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-TODO
-\end_layout
-
-\end_deeper
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Separator
 
 \end_layout
 
@@ -525,6 +1003,12 @@ status open
 \end_inset
 
 
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -555,7 +1039,10 @@ status open
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -586,6 +1073,12 @@ status open
 \end_inset
 
 
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -594,7 +1087,14 @@ status open
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
