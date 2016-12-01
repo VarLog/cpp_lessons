@@ -948,7 +948,7 @@ hotfix/*
 \begin_layout Section
 
 \size large
-Системы сборки
+Сборка проекта
 \end_layout
 
 \begin_layout Standard
@@ -1007,7 +1007,7 @@ status open
 \align center
 
 \size giant
-Системы сборки
+Сборка проекта
 \end_layout
 
 \begin_layout Standard
@@ -1049,7 +1049,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Системы сборки
+Сборка исходного кода
 \end_layout
 
 \end_inset
@@ -1065,9 +1065,681 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
+Весь код в одном файле
+\end_layout
+
+\begin_layout Itemize
+Компилятор 
+\family typewriter
+C++
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+GNU Compiler Collection (gcc)
+\end_layout
+
+\begin_layout Itemize
+Clang/LLVM
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Создание исполняемого файла:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+$ c++ main.cpp -o app
+\end_layout
+
+\begin_layout LyX-Code
+$ g++ main.cpp -o app
+\end_layout
+
+\begin_layout LyX-Code
+$ clang++ main.cpp -o app
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Модули
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Заголовочные файлы
+\end_layout
+
+\begin_layout Itemize
+Единицы трансляции
+\end_layout
+
+\begin_layout Itemize
+Компиляция
+\end_layout
+
+\begin_layout Itemize
+Компоновка
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+$ g++ -c main.cpp
+\end_layout
+
+\begin_layout LyX-Code
+$ g++ -c widget.cpp
+\end_layout
+
+\begin_layout LyX-Code
+$ g++ main.o widget.o -o app
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Флаги компиляции
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Предупреждения
+\end_layout
+
+\begin_layout Itemize
+Уровни оптимизации
+\end_layout
+
+\begin_layout Itemize
+Особенности платформы
+\end_layout
+
+\begin_layout Itemize
+Режим отладки
+\end_layout
+
+\begin_layout LyX-Code
+$ g++ -g -Wall -pedantic -c main.cpp
+\end_layout
+
+\begin_layout LyX-Code
+$ g++ -O2 -flto -march=corei7 -c main.cpp
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Автоматизация
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Утилита 
+\family typewriter
+make
+\end_layout
+
+\begin_layout Itemize
+Специальные файлы 
+\family typewriter
+Makefile
+\end_layout
+
+\begin_layout Itemize
+Набор правил
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+$ make
+\end_layout
+
+\begin_layout LyX-Code
+...
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Генераторы
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Набор утилит 
+\series bold
+Autotools
+\end_layout
+
+\begin_layout Itemize
+Автоматическая генерация 
+\family typewriter
+Makefile
+\end_layout
+
+\begin_layout Itemize
+Поиск зависимостей с помощью 
+\series bold
+pkg-config
+\end_layout
+
+\begin_layout Itemize
+Переносимость ПО
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Современные системы сборки
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Зависимые от 
+\series bold
+\emph on
+IDE
+\series default
+\emph default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+MS Visual Studio
+\end_layout
+
+\begin_layout Itemize
+Xcode
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Независимые:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+SCons
+\end_layout
+
+\begin_layout Itemize
 CMake
 \end_layout
 
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+CMake
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Кроссплатформенная система автоматизации сборки
+\end_layout
+
+\begin_layout Itemize
+Генерирует файлы управления сборкой
+\end_layout
+
+\begin_layout Itemize
+Правила генерации описаны в файле 
+\family typewriter
+CMakeLists.txt
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename cmake_logo.png
+	lyxscale 10
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Особенности
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Быстродействие
+\end_layout
+
+\begin_layout Itemize
+Простой макроязык
+\end_layout
+
+\begin_layout Itemize
+Подключаемые модули
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Пример
+\begin_inset space ~
+\end_inset
+
+файла
+\begin_inset space ~
+\end_inset
+
+CMakeLists.txt
+\end_layout
+
+\begin_layout LyX-Code
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+\end_layout
+
+\begin_layout LyX-Code
+PROJECT("test" CXX)
+\end_layout
+
+\begin_layout LyX-Code
+ADD_EXECUTABLE(app widget.cpp main.cpp)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Использование
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+CMake умеет генерировать:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family typewriter
+Makefile
+\end_layout
+
+\begin_layout Itemize
+Visual Studio проект
+\end_layout
+
+\begin_layout Itemize
+Xcode проект
+\end_layout
+
+\begin_layout Itemize
+и другие
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Многие IDE поддерживают CMake:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+QtCreator
+\end_layout
+
+\begin_layout Itemize
+JetBrains CLion
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Использование
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family typewriter
+make
+\family default
+-файлы
+\end_layout
+
+\begin_layout LyX-Code
+$ mkdir ./build
+\end_layout
+
+\begin_layout LyX-Code
+$ cd ./build
+\end_layout
+
+\begin_layout LyX-Code
+$ cmake ..
+\end_layout
+
+\begin_layout Itemize
+Указать генератор явно
+\end_layout
+
+\begin_layout LyX-Code
+$ cmake -G "Unix Makefiles" ..
+\end_layout
+
+\begin_layout LyX-Code
+$ cmake -G "Xcode" ..
+\end_layout
+
+\begin_layout LyX-Code
+$ cmake -G "Visual Studio 10" ..
+\end_layout
+
+\begin_layout Itemize
+Список генераторов
+\end_layout
+
+\begin_layout LyX-Code
+$ cmake -G list
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+CPack
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Автоматическая сборка пакетов
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Linux: DEB, RPM
+\end_layout
+
+\begin_layout Description
+Mac
+\begin_inset space ~
+\end_inset
+
+OS
+\begin_inset space ~
+\end_inset
+
+X: DMG
+\end_layout
+
+\begin_layout Description
+Windows: NSIS
+\end_layout
+
+\begin_layout Description
+Архивы: Tar, ZIP
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator parbreak
@@ -1199,24 +1871,39 @@ status open
 Git
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
 \family typewriter
 https://git-scm.com/book/ru/v2
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
 \family typewriter
 https://habrahabr.ru/post/106912/
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
 CMake
 \end_layout
 
-\begin_layout Itemize
-das
+\begin_layout Standard
+
+\family typewriter
+https://habrahabr.ru/post/155467/
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+https://github.com/kaizouman/gtest-cmake-example
 \end_layout
 
 \end_deeper
