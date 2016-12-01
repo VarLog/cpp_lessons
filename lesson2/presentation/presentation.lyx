@@ -147,7 +147,7 @@ End
 \begin_layout Section
 
 \size large
-Системы управления версиями
+Системы контроля версий
 \end_layout
 
 \begin_layout Standard
@@ -206,7 +206,7 @@ status open
 \align center
 
 \size giant
-Системы управления версиями
+Системы контроля версий
 \end_layout
 
 \begin_layout Standard
@@ -409,6 +409,10 @@ CVS
 Subversion (SVN)
 \end_layout
 
+\begin_layout Itemize
+Perforce
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator parbreak
@@ -505,6 +509,10 @@ Git
 Mercurial
 \end_layout
 
+\begin_layout Itemize
+Bazaar
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator parbreak
@@ -536,11 +544,15 @@ Git
 
 \begin_deeper
 \begin_layout Itemize
-Линус Торвальдс
+Линус Торвальдс, 2005 год
 \end_layout
 
 \begin_layout Itemize
 Ядро Linux
+\end_layout
+
+\begin_layout Itemize
+Около 10 миллионов строк кода
 \end_layout
 
 \begin_layout Standard
@@ -560,6 +572,56 @@ Git
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Цели
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Скорость
+\end_layout
+
+\begin_layout Itemize
+Простая архитектура
+\end_layout
+
+\begin_layout Itemize
+Хорошая поддержка нелинейной разработки (тысячи параллельных веток)
+\end_layout
+
+\begin_layout Itemize
+Полная децентрализация
+\end_layout
+
+\begin_layout Itemize
+Возможность эффективного управления большими проектами
 \end_layout
 
 \end_deeper
@@ -606,6 +668,48 @@ status open
 
 \begin_layout Itemize
 Синхронизация между репозиториями
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Инструменты для работы с Git
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Командная строка
+\end_layout
+
+\begin_layout Itemize
+SourceTree
+\end_layout
+
+\begin_layout Itemize
+GitKraken
 \end_layout
 
 \end_deeper
@@ -714,14 +818,21 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-Одна из главных достоинств Git
+Одно из главных достоинств Git
 \end_layout
 
 \begin_layout Itemize
-Ветка – множество 
+
 \series bold
 \emph on
-коммитов
+Коммиты
+\series default
+\emph default
+ образуют цепочки
+\end_layout
+
+\begin_layout Itemize
+Ветка – указатель на конкретный коммит
 \end_layout
 
 \begin_layout Itemize
@@ -732,48 +843,6 @@ master
 
 \begin_layout Itemize
 Слияние веток
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Инструменты для работы с Git
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Командная строка
-\end_layout
-
-\begin_layout Itemize
-SourceTree
-\end_layout
-
-\begin_layout Itemize
-GitKraken
 \end_layout
 
 \end_deeper
@@ -807,23 +876,67 @@ Git Flow
 
 \begin_deeper
 \begin_layout Itemize
-Стандартные подходы
+Стандартный подход
 \end_layout
 
 \begin_layout Itemize
-Несколько ключевых веток: 
+Несколько ключевых веток:
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+
 \series bold
 master
 \series default
- и 
+ указывает на 
+\emph on
+release
+\emph default
+ версию
+\end_layout
+
+\begin_layout Description
+
 \series bold
 develop
+\series default
+ разработка следующей версии
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
-...
+Вспомогательные ветки:
 \end_layout
 
+\begin_deeper
+\begin_layout Description
+
+\series bold
+feature/*
+\series default
+ отдельные ветки для разработки
+\end_layout
+
+\begin_layout Description
+
+\series bold
+release/*
+\series default
+ стабилизационные ветки перед 
+\emph on
+релизом
+\end_layout
+
+\begin_layout Description
+
+\series bold
+hotfix/*
+\series default
+ критические исправления
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator parbreak
@@ -1082,8 +1195,28 @@ status open
 \end_layout
 
 \begin_deeper
+\begin_layout Description
+Git
+\end_layout
+
 \begin_layout Itemize
-Заключение
+
+\family typewriter
+https://git-scm.com/book/ru/v2
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+https://habrahabr.ru/post/106912/
+\end_layout
+
+\begin_layout Description
+CMake
+\end_layout
+
+\begin_layout Itemize
+das
 \end_layout
 
 \end_deeper
