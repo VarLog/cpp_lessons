@@ -2,7 +2,7 @@
 
 #include "game.h"
 
-int main(int argc, char** argv) {
+int main() {
     std::cout << "Intellectual game" << std::endl;
 
     Game game;

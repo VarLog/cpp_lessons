@@ -1,16 +1,15 @@
 #include "game.h"
 
 #include <iostream>
-#include <sstream>
 #include <random>
+#include <sstream>
 
 int Game::run() {
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> dis(1, 9);
 
-    while(std::cin.good())
-    {
+    while (std::cin.good()) {
         auto a = dis(gen);
         auto b = dis(gen);
 
@@ -23,11 +22,9 @@ int Game::run() {
             ++score_;
             std::cout << "Correct! You score: " << score_ << std::endl;
         } else {
-            std::cout << "You made a mistake. The right answer is " 
-                << (a + b) << std::endl;
+            std::cout << "You made a mistake. The right answer is " << (a + b) << std::endl;
         }
     }
 
     return 0;
 }
-
