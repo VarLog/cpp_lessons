@@ -1,13 +1,11 @@
 #include <iostream>
 
+#include "game.h"
+
 int main(int argc, char** argv) {
-    std::cout << "Hello world" << std::endl;
+    std::cout << "Intellectual game" << std::endl;
 
-    auto f = [](auto&& i) {
-        std::cout << i << std::endl;
-    };
+    Game game;
 
-    f(3);
-
-    return 0;
+    return game.run();
 }
