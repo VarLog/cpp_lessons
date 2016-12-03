@@ -13,10 +13,10 @@ game: $(OBJ)
 	$(CXX) $(LDLIBS) $(OBJ) -o game
 
 main.o: src/main.cpp
-	$(CC) $(DEBUG) $(CPPFLAGS) -c src/main.cpp
+	$(CXX) $(DEBUG) $(CPPFLAGS) -c src/main.cpp
 
 game.o: src/game.cpp
-	$(CC) $(DEBUG) $(CPPFLAGS) -c src/game.cpp
+	$(CXX) $(DEBUG) $(CPPFLAGS) -c src/game.cpp
 
 clean: 
 	rm -fv $(OBJ) game
