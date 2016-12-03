@@ -9,7 +9,7 @@ int Game::run() {
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> dis(1, 9);
 
-    while(1)
+    while(std::cin.good())
     {
         auto a = dis(gen);
         auto b = dis(gen);
@@ -27,5 +27,7 @@ int Game::run() {
                 << (a + b) << std::endl;
         }
     }
+
+    return 0;
 }
 
