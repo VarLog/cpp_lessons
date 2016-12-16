@@ -1,0 +1,1413 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usepackage{textpos}
+
+\usepackage{listings}
+
+\usetheme{default}
+
+%gets rid of bottom navigation bars
+%\setbeamertemplate{footline}[frame number]{}
+%gets rid of bottom navigation symbols
+%\setbeamertemplate{navigation symbols}{}
+\beamertemplatenavigationsymbolsempty
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
+
+\addtobeamertemplate{frametitle}{}{%
+    \begin{textblock*}{100mm}(.85\textwidth,-1cm)
+    \includegraphics[height=1cm,width=2cm]{iate_logo.jpg}
+    \end{textblock*}
+}
+
+\definecolor{greyblue}{RGB}{153, 179, 255}
+\definecolor{grey}{RGB}{230, 230, 230}
+
+\lstset{basicstyle=\ttfamily\smallest}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 49
+Style CppCode
+Category              MainText
+Margin                Static
+LatexType             Environment
+LatexName             lstlisting
+NextNoIndent          1
+LeftMargin            MMM
+RightMargin           MMM
+PassThru              1
+ParbreakIsNewline             1
+ParIndent             MM
+ParSkip               0
+ItemSep               0
+TopSep                0.5
+BottomSep             0.5
+ParSep                0
+Align                 Block
+AlignPossible         Block, Left, Right, Center
+End
+\end_local_layout
+\language russian
+\language_package babel
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "backgroundcolor={\color{grey}},basicstyle={\ttfamily\smallest}"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Современный C++
+\end_layout
+
+\begin_layout Institute
+ИАТЭ НИЯУ МИФИ
+\begin_inset Newline newline
+\end_inset
+
+Кафедра ПМ
+\end_layout
+
+\begin_layout Author
+Максим Федоренко
+\end_layout
+
+\begin_layout Date
+17 декабря 2016 г.
+\end_layout
+
+\begin_layout Section
+
+\size large
+Командная работа над проектом
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamercolor{background canvas}{bg=greyblue}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Командная работа над проектом
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Гибкая методология разработки
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Agile
+\series default
+-методы
+\end_layout
+
+\begin_layout Itemize
+Семейство процессов разработки
+\end_layout
+
+\begin_layout Itemize
+Итеративная работа
+\end_layout
+
+\begin_layout Itemize
+Часто меняющиеся требования
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Agile
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Небольшие группы специалистов разного профиля
+\end_layout
+
+\begin_layout Itemize
+Постоянное взаимодействие между участниками
+\end_layout
+
+\begin_layout Itemize
+Минимизация рисков
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Итерация
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+2-3 недели
+\end_layout
+
+\begin_layout Itemize
+Планирование
+\end_layout
+
+\begin_layout Itemize
+Проектирование
+\end_layout
+
+\begin_layout Itemize
+Разработка
+\end_layout
+
+\begin_layout Itemize
+Тестирование
+\end_layout
+
+\begin_layout Itemize
+Документирование
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Система управления проектом
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Оптимизационная задача
+\end_layout
+
+\begin_layout Itemize
+Достижение целей проекта
+\end_layout
+
+\begin_layout Itemize
+Объём работ, ресурсы, время, качество и риски
+\end_layout
+
+\begin_layout Description
+Примеры
+\end_layout
+
+\begin_layout Itemize
+JIRA
+\end_layout
+
+\begin_layout Itemize
+Redmine
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+JIRA
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Система bug-трекинга
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename jira_demo.png
+	lyxscale 10
+	height 6.5cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+JIRA
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Реализация Agile
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename jira_agile_demo.png
+	lyxscale 10
+	height 6.5cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Redmine
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Открытое ПО
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename redmine_demo.png
+	lyxscale 10
+	height 5.5cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\size large
+Экстремальное программирование
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamercolor{background canvas}{bg=greyblue}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Экстремальное программирование
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Экстремальное программирование
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Extreme Programming, XP
+\end_layout
+
+\begin_layout Itemize
+Agile-методология
+\end_layout
+
+\begin_layout Itemize
+Традиционные методы на 
+\begin_inset Quotes fld
+\end_inset
+
+экстремальном
+\begin_inset Quotes frd
+\end_inset
+
+ уровне
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Основные приёмы
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Короткий цикл обратной связи
+\end_layout
+
+\begin_layout Itemize
+Понимание, разделяемое всеми
+\end_layout
+
+\begin_layout Itemize
+Непрерывный процесс
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Обратная связь
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Разработка через тестирование
+\end_layout
+
+\begin_layout Itemize
+Парное программирование
+\end_layout
+
+\begin_layout Itemize
+Заказчик всегда рядом
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Общее понимание проекта
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Каждый участник проекта владеет всем кодом
+\end_layout
+
+\begin_layout Itemize
+Архитектура документирована
+\end_layout
+
+\begin_layout Itemize
+Стандарт кодирования
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Стандарт оформления кода
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Набор правил и соглашений
+\end_layout
+
+\begin_layout Itemize
+Общий стиль
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Способы выбора названий
+\end_layout
+
+\begin_layout Itemize
+Стиль отступов
+\end_layout
+
+\begin_layout Itemize
+Способ расстановки скобок
+\end_layout
+
+\begin_layout Itemize
+Стиль комментариев
+\end_layout
+
+\begin_layout Itemize
+Запреты и рекомендации
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Google C++ Style Guide
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+https://google.github.io/styleguide/cppguide.html
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Непрерывный процесс разработки
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Постоянный 
+\series bold
+рефакторинг
+\end_layout
+
+\begin_layout Itemize
+Частые небольшие релизы
+\end_layout
+
+\begin_layout Itemize
+Непрерывная интеграция
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\size large
+Непрерывная интеграция
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamercolor{background canvas}{bg=greyblue}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Непрерывная интеграция
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Непрерывная интеграция
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Continuous Integration
+\series default
+, 
+\series bold
+CI
+\end_layout
+
+\begin_layout Itemize
+Автоматизированный процесс сборки проекта
+\end_layout
+
+\begin_layout Itemize
+Сборки много раз в день
+\end_layout
+
+\begin_layout Itemize
+Отдельные сборочные машины
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Преимущества
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Проблемы интеграции выявляются и исправляются быстро
+\end_layout
+
+\begin_layout Itemize
+Немедленный прогон модульных тестов для свежих изменений
+\end_layout
+
+\begin_layout Itemize
+Постоянное наличие текущей стабильной версии
+\end_layout
+
+\begin_layout Itemize
+Код в основной ветке всегда рабочий
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Jenkins
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Открытое ПО
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename jenkins_demo.png
+	lyxscale 10
+	height 5.5cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+TeamCity
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Продукт Atlassian
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename teamcity_demo.png
+	lyxscale 10
+	height 4.1cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\size large
+Заключение
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamercolor{background canvas}{bg=greyblue}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Заключение
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Заключение
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Литература
+\end_layout
+
+\begin_layout Itemize
+Стив Макконнелл
+\series bold
+\emph on
+ Совершенный код
+\end_layout
+
+\begin_layout Itemize
+Пол Дюваль 
+\series bold
+\emph on
+Непрерывная интеграция
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
