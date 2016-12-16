@@ -139,7 +139,7 @@ End
 \end_layout
 
 \begin_layout Date
-10 декабря 2016 г.
+17 декабря 2016 г.
 \end_layout
 
 \begin_layout Section
@@ -408,10 +408,18 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-Планирование задач
+Оптимизационная задача
 \end_layout
 
 \begin_layout Itemize
+Достижение целей проекта
+\end_layout
+
+\begin_layout Itemize
+Объём работ, ресурсы, время, качество и риски
+\end_layout
+
+\begin_layout Description
 Примеры
 \end_layout
 
@@ -438,56 +446,6 @@ Redmine
 status open
 
 \begin_layout Plain Layout
-Система управления проектом
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Планирование задач
-\end_layout
-
-\begin_layout Itemize
-Примеры
-\end_layout
-
-\begin_layout Itemize
-JIRA
-\end_layout
-
-\begin_layout Itemize
-Redmine
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
 JIRA
 \end_layout
 
@@ -504,15 +462,15 @@ JIRA
 
 \begin_deeper
 \begin_layout Itemize
-das
+Система bug-трекинга
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename git_logo.png
+	filename jira_demo.png
 	lyxscale 10
-	height 2cm
+	height 6.5cm
 
 \end_inset
 
@@ -550,50 +508,19 @@ JIRA
 
 \begin_deeper
 \begin_layout Itemize
-Хранилище (репозиторий) находится на 
-\series bold
-сервере
-\end_layout
-
-\begin_layout Itemize
-Сервер совершает оdsaперации над репозиторием
-\end_layout
-
-\begin_layout Itemize
-Пользователь работает с 
-\series bold
-\emph on
-рабочей копией
-\end_layout
-
-\begin_layout Itemize
-Изменения отправляются на сервер, формируется новая 
-\series bold
-\emph on
-ревизия
+Реализация Agile
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace bigskip
+\align center
+\begin_inset Graphics
+	filename jira_agile_demo.png
+	lyxscale 10
+	height 6.5cm
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Description
-Примеры:
-\end_layout
-
-\begin_layout Itemize
-CVS
-\end_layout
-
-\begin_layout Itemize
-Subversion (SVN)
-\end_layout
-
-\begin_layout Itemize
-Perforce
 \end_layout
 
 \end_deeper
@@ -627,682 +554,15 @@ Redmine
 
 \begin_deeper
 \begin_layout Itemize
-Клиент-серверная архитектура не обладает гибкостью
-\end_layout
-
-\begin_layout Itemize
-Слабая поддержка ветвления
-\end_layout
-
-\begin_layout Itemize
-Линейный подход к разработке
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Распределённые системы
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Каждая рабочая копия – полноценный репозиторий
-\end_layout
-
-\begin_layout Itemize
-Для работы не нужен сервер
-\end_layout
-
-\begin_layout Itemize
-Хранилища синхронизируются между собой
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Description
-Примеры:
-\end_layout
-
-\begin_layout Itemize
-Git
-\end_layout
-
-\begin_layout Itemize
-Mercurial
-\end_layout
-
-\begin_layout Itemize
-Bazaar
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Git
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Линус Торвальдс, 2005 год
-\end_layout
-
-\begin_layout Itemize
-Ядро Linux
-\end_layout
-
-\begin_layout Itemize
-Около 10 миллионов строк кода
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
+Открытое ПО
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename git_logo.png
+	filename redmine_demo.png
 	lyxscale 10
-	height 2cm
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Цели
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Скорость
-\end_layout
-
-\begin_layout Itemize
-Простая архитектура
-\end_layout
-
-\begin_layout Itemize
-Хорошая поддержка нелинейной разработки (тысячи параллельных веток)
-\end_layout
-
-\begin_layout Itemize
-Полная децентрализация
-\end_layout
-
-\begin_layout Itemize
-Возможность эффективного управления большими проектами
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Инструменты для работы с Git
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Командная строка
-\end_layout
-
-\begin_layout Itemize
-SourceTree
-\end_layout
-
-\begin_layout Itemize
-GitKraken
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Основы
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Создать новый репозиторий:
-\end_layout
-
-\begin_layout LyX-Code
-$ git init .
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Клонировать существующий:
-\end_layout
-
-\begin_layout LyX-Code
-$ git clone https://github.com/VarLog/cpp_lessons
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Принципы работы
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Рабочая копия
-\end_layout
-
-\begin_layout LyX-Code
-$ git status
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Добавление изменений в индекс
-\end_layout
-
-\begin_layout LyX-Code
-$ git add file1 file2
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Принципы работы
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Фиксация изменений
-\end_layout
-
-\begin_layout LyX-Code
-$ git commit
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Синхронизация между репозиториями
-\end_layout
-
-\begin_layout LyX-Code
-$ git fetch
-\end_layout
-
-\begin_layout LyX-Code
-$ git pull
-\end_layout
-
-\begin_layout LyX-Code
-$ git push
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Удалённые репозитории
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Командная работа над проектом
-\end_layout
-
-\begin_layout Itemize
-Работа на разных устройствах
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\emph on
-Голые
-\series default
-\emph default
- репозитории
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-GitHub
-\series default
- – хостинг удалённых репозиториев
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename github_logo.png
-	lyxscale 10
-	height 2cm
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Ветки
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Одно из главных достоинств Git
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\emph on
-Коммиты
-\series default
-\emph default
- образуют цепочки
-\end_layout
-
-\begin_layout Itemize
-Ветка – указатель на конкретный коммит
-\end_layout
-
-\begin_layout Itemize
-Главная ветка – 
-\series bold
-master
-\end_layout
-
-\begin_layout Itemize
-Слияние веток
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout LyX-Code
-$ git branch new_branch
-\end_layout
-
-\begin_layout LyX-Code
-$ git checkout new_branch
-\end_layout
-
-\begin_layout LyX-Code
-$ git merge new_branch
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Git Flow
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Стандартный подход
-\end_layout
-
-\begin_layout Itemize
-Несколько ключевых веток:
-\end_layout
-
-\begin_deeper
-\begin_layout Description
-
-\series bold
-master
-\series default
- указывает на 
-\emph on
-release
-\emph default
- версию
-\end_layout
-
-\begin_layout Description
-
-\series bold
-develop
-\series default
- разработка следующей версии
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Вспомогательные ветки:
-\end_layout
-
-\begin_deeper
-\begin_layout Description
-
-\series bold
-feature/*
-\series default
- отдельные ветки для разработки
-\end_layout
-
-\begin_layout Description
-
-\series bold
-release/*
-\series default
- стабилизационные ветки перед 
-\emph on
-релизом
-\end_layout
-
-\begin_layout Description
-
-\series bold
-hotfix/*
-\series default
- критические исправления
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Git Flow
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename gitflow.png
-	lyxscale 10
-	height 7cm
+	height 5.5cm
 
 \end_inset
 
@@ -1320,7 +580,7 @@ Git Flow
 \begin_layout Section
 
 \size large
-Сборка проекта
+Экстремальное программирование
 \end_layout
 
 \begin_layout Standard
@@ -1379,7 +639,7 @@ status open
 \align center
 
 \size giant
-Сборка проекта
+Экстремальное программирование
 \end_layout
 
 \begin_layout Standard
@@ -1421,7 +681,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-Сборка исходного кода
+Экстремальное программирование
 \end_layout
 
 \end_inset
@@ -1437,180 +697,23 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-Весь код в одном файле
+Extreme Programming, XP
 \end_layout
 
 \begin_layout Itemize
-Компилятор 
-\family typewriter
-C++
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-GNU Compiler Collection (gcc)
+Agile-методология
 \end_layout
 
 \begin_layout Itemize
-Clang/LLVM
-\end_layout
-
-\begin_layout Itemize
-MinGW (gcc на Windows)
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset VSpace bigskip
+Традиционные методы на 
+\begin_inset Quotes fld
 \end_inset
 
-
-\end_layout
-
-\begin_layout Itemize
-Создание исполняемого файла:
-\end_layout
-
-\begin_deeper
-\begin_layout LyX-Code
-$ c++ main.cpp -o app
-\end_layout
-
-\begin_layout LyX-Code
-$ g++ main.cpp -o app
-\end_layout
-
-\begin_layout LyX-Code
-$ clang++ main.cpp -o app
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
+экстремальном
+\begin_inset Quotes frd
 \end_inset
 
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Модули
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Заголовочные файлы
-\end_layout
-
-\begin_layout Itemize
-Единицы трансляции
-\end_layout
-
-\begin_layout Itemize
-Компиляция
-\end_layout
-
-\begin_layout Itemize
-Компоновка
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout LyX-Code
-$ g++ -c main.cpp
-\end_layout
-
-\begin_layout LyX-Code
-$ g++ -c widget.cpp
-\end_layout
-
-\begin_layout LyX-Code
-$ g++ main.o widget.o -o app
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Флаги компиляции
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Предупреждения
-\end_layout
-
-\begin_layout Itemize
-Уровни оптимизации
-\end_layout
-
-\begin_layout Itemize
-Особенности платформы
-\end_layout
-
-\begin_layout Itemize
-Режим отладки
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout LyX-Code
-$ g++ -g -Wall -pedantic -c main.cpp
-\end_layout
-
-\begin_layout LyX-Code
-$ g++ -O2 -flto -march=corei7 -c main.cpp
+ уровне
 \end_layout
 
 \end_deeper
@@ -1628,7 +731,7 @@ $ g++ -O2 -flto -march=corei7 -c main.cpp
 status open
 
 \begin_layout Plain Layout
-Автоматизация
+Основные приёмы
 \end_layout
 
 \end_inset
@@ -1644,38 +747,17 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-Утилита 
-\family typewriter
-make
+Короткий цикл обратной связи
 \end_layout
 
 \begin_layout Itemize
-Специальные файлы 
-\family typewriter
-Makefile
+Понимание, разделяемое всеми
 \end_layout
 
 \begin_layout Itemize
-Набор правил
+Непрерывный процесс
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout LyX-Code
-$ make
-\end_layout
-
-\begin_layout LyX-Code
-...
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator parbreak
@@ -1691,7 +773,7 @@ $ make
 status open
 
 \begin_layout Plain Layout
-Генераторы
+Обратная связь
 \end_layout
 
 \end_inset
@@ -1707,25 +789,136 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-Набор утилит 
+Разработка через тестирование
+\end_layout
+
+\begin_layout Itemize
+Парное программирование
+\end_layout
+
+\begin_layout Itemize
+Заказчик всегда рядом
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Общее понимание проекта
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Каждый участник проекта владеет всем кодом
+\end_layout
+
+\begin_layout Itemize
+Архитектура документирована
+\end_layout
+
+\begin_layout Itemize
+Стандарт кодирования
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Стандарт оформления кода
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Набор правил и соглашений
+\end_layout
+
+\begin_layout Itemize
+Общий стиль
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Способы выбора названий
+\end_layout
+
+\begin_layout Itemize
+Стиль отступов
+\end_layout
+
+\begin_layout Itemize
+Способ расстановки скобок
+\end_layout
+
+\begin_layout Itemize
+Стиль комментариев
+\end_layout
+
+\begin_layout Itemize
+Запреты и рекомендации
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
 \series bold
-Autotools
+Google C++ Style Guide
 \end_layout
 
-\begin_layout Itemize
-Автоматическая генерация 
+\begin_layout Standard
+
 \family typewriter
-Makefile
-\end_layout
-
-\begin_layout Itemize
-Поиск зависимостей с помощью 
-\series bold
-pkg-config
-\end_layout
-
-\begin_layout Itemize
-Переносимость ПО
+https://google.github.io/styleguide/cppguide.html
 \end_layout
 
 \end_deeper
@@ -1743,7 +936,7 @@ pkg-config
 status open
 
 \begin_layout Plain Layout
-Современные системы сборки
+Непрерывный процесс разработки
 \end_layout
 
 \end_inset
@@ -1759,49 +952,49 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-Зависимые от 
+Постоянный 
 \series bold
-\emph on
-IDE
-\series default
-\emph default
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-MS Visual Studio
+рефакторинг
 \end_layout
 
 \begin_layout Itemize
-Xcode
+Частые небольшие релизы
+\end_layout
+
+\begin_layout Itemize
+Непрерывная интеграция
 \end_layout
 
 \end_deeper
 \begin_layout Standard
-\begin_inset VSpace bigskip
+\begin_inset Separator parbreak
 \end_inset
 
 
 \end_layout
 
-\begin_layout Itemize
-Независимые:
+\begin_layout Section
+
+\size large
+Непрерывная интеграция
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-SCons
-\end_layout
-
-\begin_layout Itemize
-CMake
-\end_layout
-
-\end_deeper
-\end_deeper
 \begin_layout Standard
-\begin_inset Separator parbreak
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamercolor{background canvas}{bg=greyblue}
+\end_layout
+
 \end_inset
 
 
@@ -1814,7 +1007,7 @@ CMake
 status open
 
 \begin_layout Plain Layout
-CMake
+
 \end_layout
 
 \end_inset
@@ -1829,21 +1022,9 @@ CMake
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Кроссплатформенная система автоматизации сборки
-\end_layout
-
-\begin_layout Itemize
-Генерирует файлы управления сборкой
-\end_layout
-
-\begin_layout Itemize
-Правила генерации описаны в файле 
-\family typewriter
-CMakeLists.txt
-\end_layout
-
 \begin_layout Standard
+
+\size large
 \begin_inset VSpace vfill
 \end_inset
 
@@ -1852,96 +1033,173 @@ CMakeLists.txt
 
 \begin_layout Standard
 \align center
+
+\size giant
+Непрерывная интеграция
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size large
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Непрерывная интеграция
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Continuous Integration
+\series default
+, 
+\series bold
+CI
+\end_layout
+
+\begin_layout Itemize
+Автоматизированный процесс сборки проекта
+\end_layout
+
+\begin_layout Itemize
+Сборки много раз в день
+\end_layout
+
+\begin_layout Itemize
+Отдельные сборочные машины
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Преимущества
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Проблемы интеграции выявляются и исправляются быстро
+\end_layout
+
+\begin_layout Itemize
+Немедленный прогон модульных тестов для свежих изменений
+\end_layout
+
+\begin_layout Itemize
+Постоянное наличие текущей стабильной версии
+\end_layout
+
+\begin_layout Itemize
+Код в основной ветке всегда рабочий
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\size large
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Jenkins
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Открытое ПО
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
-	filename cmake_logo.png
+	filename jenkins_demo.png
 	lyxscale 10
-	height 3cm
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout FragileFrame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Особенности
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Быстродействие
-\end_layout
-
-\begin_layout Itemize
-Простой макроязык
-\end_layout
-
-\begin_layout Itemize
-Подключаемые модули
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Description
-Пример
-\begin_inset space ~
-\end_inset
-
-файла
-\begin_inset space ~
-\end_inset
-
-CMakeLists.txt
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
-\end_layout
-
-\begin_layout Plain Layout
-
-PROJECT("test" CXX)
-\end_layout
-
-\begin_layout Plain Layout
-
-ADD_EXECUTABLE(app widget.cpp main.cpp)
-\end_layout
+	height 5.5cm
 
 \end_inset
 
@@ -1963,7 +1221,7 @@ ADD_EXECUTABLE(app widget.cpp main.cpp)
 status open
 
 \begin_layout Plain Layout
-Использование
+TeamCity
 \end_layout
 
 \end_inset
@@ -1979,514 +1237,21 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-CMake умеет генерировать:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\family typewriter
-Makefile
-\end_layout
-
-\begin_layout Itemize
-Visual Studio проект
-\end_layout
-
-\begin_layout Itemize
-Xcode проект
-\end_layout
-
-\begin_layout Itemize
-и другие
+Продукт Atlassian
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Многие IDE поддерживают CMake:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-QtCreator
-\end_layout
-
-\begin_layout Itemize
-JetBrains CLion
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Использование
-\end_layout
+\align center
+\begin_inset Graphics
+	filename teamcity_demo.png
+	lyxscale 10
+	height 4.1cm
 
 \end_inset
 
 
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\family typewriter
-make
-\family default
--файлы
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout LyX-Code
-$ mkdir ./build
-\end_layout
-
-\begin_layout LyX-Code
-$ cd ./build
-\end_layout
-
-\begin_layout LyX-Code
-$ cmake ..
-\end_layout
-
-\begin_layout LyX-Code
-...
-\end_layout
-
-\begin_layout LyX-Code
-$ make
-\end_layout
-
-\begin_layout LyX-Code
-...
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Использование
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Указать генератор явно
-\end_layout
-
-\begin_layout LyX-Code
-$ cmake -G "Xcode" ..
-\end_layout
-
-\begin_layout LyX-Code
-$ cmake -G "Visual Studio 10" ..
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Список генераторов
-\end_layout
-
-\begin_layout LyX-Code
-$ cmake -G list
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout FragileFrame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-CMakeLists.txt
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Переменные
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-project("game" CXX)
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-include_directories("include")
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-set(HEADERS "include/Game.h"
-\end_layout
-
-\begin_layout Plain Layout
-
-            "include/GameObject.h")
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-set(SOURCES "src/main.cpp"
-\end_layout
-
-\begin_layout Plain Layout
-
-            "src/Game.cpp")
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-add_executable(${PROJECT_NAME} 
-\end_layout
-
-\begin_layout Plain Layout
-
-               ${SOURCES}
-\end_layout
-
-\begin_layout Plain Layout
-
-               ${HEADERS})
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout FragileFrame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-CMakeLists.txt
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Поиск файлов по шаблону
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-file(GLOB HEADERS "include/*.h")
-\end_layout
-
-\begin_layout Plain Layout
-
-file(GLOB SOURCES "src/*.cpp")
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-add_executable(${PROJECT_NAME}
-\end_layout
-
-\begin_layout Plain Layout
-
-               ${SOURCES}
-\end_layout
-
-\begin_layout Plain Layout
-
-               ${HEADERS})
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout FragileFrame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-CMakeLists.txt
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Поиск зависимостей
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-find_package(OpenMP)
-\end_layout
-
-\begin_layout Plain Layout
-
-if(OPENMP_FOUND)
-\end_layout
-
-\begin_layout Plain Layout
-
-  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}
-\end_layout
-
-\begin_layout Plain Layout
-
-         ${OpenMP_C_FLAGS}")
-\end_layout
-
-\begin_layout Plain Layout
-
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}
-\end_layout
-
-\begin_layout Plain Layout
-
-         ${OpenMP_CXX_FLAGS}")  
-\end_layout
-
-\begin_layout Plain Layout
-
-endif()
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\size large
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-CPack
-\end_layout
-
-\end_inset
-
-
-\size default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Автоматическая сборка пакетов
-\end_layout
-
-\begin_deeper
-\begin_layout Description
-Linux: DEB, RPM
-\end_layout
-
-\begin_layout Description
-Mac
-\begin_inset space ~
-\end_inset
-
-OS
-\begin_inset space ~
-\end_inset
-
-X: DMG
-\end_layout
-
-\begin_layout Description
-Windows: NSIS
-\end_layout
-
-\begin_layout Description
-Архивы: Tar, ZIP
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator parbreak
@@ -2615,48 +1380,21 @@ status open
 
 \begin_deeper
 \begin_layout Description
-Git
+Литература
 \end_layout
 
-\begin_layout Standard
-
-\family typewriter
-https://git-scm.com/book/ru/v2
+\begin_layout Itemize
+Стив Макконнелл
+\series bold
+\emph on
+ Совершенный код
 \end_layout
 
-\begin_layout Standard
-
-\family typewriter
-https://habrahabr.ru/post/106912/
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace vfill
-\end_inset
-
-
-\end_layout
-
-\begin_layout Description
-CMake
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-https://habrahabr.ru/post/155467/
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-https://habrahabr.ru/post/155397/
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-https://github.com/kaizouman/gtest-cmake-example
+\begin_layout Itemize
+Пол Дюваль 
+\series bold
+\emph on
+Непрерывная интеграция
 \end_layout
 
 \end_deeper
